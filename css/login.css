@@ -1,0 +1,49 @@
+:root{
+  /*========== Colors ==========*/
+--first-color: tomato;
+--first-color-alt: ##10C0C9;
+--title-color: #393939;
+--text-color: #707070;
+--text-color-light: #A6A6A6;
+--body-color: #FBFEFD;
+--container-color: #FFFFFF;
+}
+
+*{
+  box-sizing: border-box;
+}
+body {
+ 
+  background-color:var(--first-color);
+  height: 100vh;
+}
+
+#login-row{
+
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#login-form{
+
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: 1px solid rgb(185, 185, 185);
+  border-radius: 4%;
+  background-color: #FBFEFD;
+  padding: 20px 0px;
+}
+.form-group{
+  
+  width: 80%;
+  margin: auto;
+ 
+}
+
+#title1{
+  color: #fff;
+
+}

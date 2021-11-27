@@ -1,0 +1,104 @@
+:root{
+  /*========== Colors ==========*/
+--first-color: tomato;
+--first-color-alt: ##10C0C9;
+--title-color: #393939;
+--text-color: #707070;
+--text-color-light: #A6A6A6;
+--body-color: #FBFEFD;
+--container-color: #FFFFFF;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--first-color);
+  height: 100vh;
+}
+#login-box{
+  
+}
+#login-form{
+ 
+  margin: 35px;
+  height: 540px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: 1px solid rgb(185, 185, 185);
+  border-radius: 4%;
+  padding: 25px 25px;
+  background-color: var(--body-color);
+}
+
+h4{
+  color: #393939;
+}
+
+/* .formulario__input {
+	width: 100%;
+	background: #fff;
+	border: 1px solid var(--text-color);
+	border-radius: 5px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;
+}
+ */
+.formulario__input:focus {
+
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+.formulario__input-error {
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+  color: rgb(223, 37, 37);
+}
+
+.formulario__input-error-activo {
+	display: block;
+}
+
+.formulario__validacion-estado {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+.formulario__input-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__input-incorrecto .formulario__label {
+	color: #bb2929;
+}
+
+.formulario__input-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__input-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+}
+.correcto{
+  border: 1px solid #0662cc;
+}
+
+.incorrecto{
+  border: 1px solid rgb(223, 35, 35);
+}
+
+
+.formulario__mensaje{
+	display: none;
+}
